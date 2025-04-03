@@ -11,7 +11,7 @@ import {
 import { bodyLimit } from 'hono/body-limit'
 import { secureHeaders } from 'hono/secure-headers'
 
-const app = new Hono()
+const app = new Hono({ strict: true })
 
 
 app.use(cors())

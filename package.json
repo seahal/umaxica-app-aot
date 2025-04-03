@@ -1,20 +1,23 @@
 {
-  "name": "my-app",
+  "name": "umaxica-app-aot",
   "type": "module",
   "scripts": {
-    "prebuild": "node build.js",
+    "prebuild": "bun build.js",
     "build": "js-compute-runtime ./dist/index.js ./bin/main.wasm",
-    "start": "fastly compute serve",
-    "deploy": "fastly compute publish"
+    "server": "fastly compute serve",
+    "deploy": "fastly compute publish",
+		"format": "biome format . --write ",
+		"lint": "biome lint ."
   },
   "dependencies": {
-    "@fastly/js-compute": "^3.33.2",
-    "fastly": "^10.0.0",
+
     "hono": "^4.7.5"
   },
   "devDependencies": {
     "@fastly/cli": "^11.1.0",
     "biome": "^0.3.3",
-    "esbuild": "^0.25.2"
+    "esbuild": "^0.25.2",
+    "@fastly/js-compute": "^3.33.2",
+    "fastly": "^10.0.0"
   }
 }
