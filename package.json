@@ -13,8 +13,8 @@
     "hono": "^4.7.5"
   },
   "devDependencies": {
-    "@fastly/cli": "^11.0.0",
+    "@fastly/cli": "^11.1.0",
     "biome": "^0.3.3",
-    "esbuild": "^0.25.1"
+    "esbuild": "^0.25.2"
   }
 }
