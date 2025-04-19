@@ -13,7 +13,6 @@ import { secureHeaders } from 'hono/secure-headers'
 
 const app = new Hono({ strict: true })
 
-
 app.use(cors())
 app.use(compress())
 app.use(csrf())
